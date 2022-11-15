@@ -287,3 +287,91 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+/*========================================*/
+/*=========== CSS INCRUSTADO =============*/
+/*========================================*/
+
+.contenedor_principal{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                        "titulo_one titulo_two"
+                        "contenido_one contenido_two";
+}
+
+/* Llamado de titulos */
+
+.titulo1{
+    grid-area: titulo_one;
+    text-align: center;
+}
+.titulo2{
+    grid-area: titulo_two;
+    text-align: center;
+}
+
+/* llamado de contenedores hijos */
+
+.contenido_1{
+    grid-area: contenido_one;
+
+    /* Contenido interior */
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.contenido_2{
+    grid-area: contenido_two;
+
+    /* Contenido interior */
+
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+/* estilos contenedores hijos */
+
+.contenedor_principal_disponibles{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.conductores_disponibles{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+.contenedor_principal_en_servicio{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.conductores_servicio{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+#tbl_disponibles{
+    display: flex;
+    justify-content: center;
+}
+
+#tbl_en_servicio{
+    display: flex;
+    justify-content: center;
+}
