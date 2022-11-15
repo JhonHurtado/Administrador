@@ -310,7 +310,6 @@
 /* carlos */
 
 .contenedor_principal{
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -321,10 +320,12 @@
 /* Llamado de titulos */
 
 .titulo1{
+    color: black;
     grid-area: titulo_one;
     text-align: center;
 }
 .titulo2{
+    color: black;
     grid-area: titulo_two;
     text-align: center;
 }
@@ -362,8 +363,9 @@
 }
 
 .conductores_disponibles{
+    color: black;
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
 }
@@ -377,8 +379,9 @@
 }
 
 .conductores_servicio{
+    color: black;
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
 }
@@ -393,6 +396,73 @@
     justify-content: center;
 }
 
-.fa-bars:before {
-    content: "\f0c9";
-    color: var(--dark);}
+* _____________________________________________ CSS DE HTML SOLICITUD CONDUCTORES ______________________________________ */
+
+.contenedor_principal_soli_conductores{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "titulo_unico"
+                        "contenido_unico";
+}
+
+.titulo1{
+    grid-area: titulo_unico;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor_solicitudes{
+    background-color: rgb(251, 251, 251);
+    grid-area: contenido_unico;
+
+    /* Contenido interior */
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+}
+
+/* CONTENIDO SOLICITUD CONDUCTORES */
+
+.contenedor_principal_soli{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.solicitud_conductores{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+#tablas-soli{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#btn_aceptar{
+    cursor: pointer;
+    border: solid 2px;
+    border-radius: 15px;
+    color: rgb(0, 4, 255);
+}
+
+#btn_rechazar{
+    cursor: pointer;
+    border: solid 2px;
+    border-radius: 15px;
+    color: rgb(255, 0, 0);
+}
+
+.mas_datos{
+    color: rgb(0, 123, 255);
+}
+
+.ver_manifiesto{
+    color: blue;
+}
