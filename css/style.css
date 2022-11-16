@@ -466,3 +466,199 @@
 .ver_manifiesto{
     color: blue;
 }
+
+/* _________________________________________ CSS DE HTML DATOS CONDUCTORES _________________________________________________ */
+
+.contenedor_principal_datos_conductores{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "titulo_unico"
+                        "contenido_unico";
+}
+
+.titulo2{
+    grid-area: titulo_unico;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor_datos_conductor{
+    background-color: rgb(251, 251, 251);
+    grid-area: contenido_unico;
+
+    /* Contenido interior */
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+}
+
+.contenedor_principal_datos_conductor{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.datos_conductores{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+#tablas-datos_conductor{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+/* ______________________________________ DATOS CLIENTES _______________________________________ */
+
+
+.contenedor_principal_datos_clientes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "titulo_unico"
+                        "contenido_unico";
+}
+
+.titulo3{
+    grid-area: titulo_unico;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor_datos_cliente{
+    background-color: rgb(251, 251, 251);
+    grid-area: contenido_unico;
+
+    /* Contenido interior */
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+}
+
+/* CONTENIDO DATOS CLIENTE */
+
+.contenedor_principal_datos_cliente{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.datos_cliente{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+#tablas-datos_cliente{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+/* ________________________________________ HISTORIAL DE VIAJES _______________________________________________________ */
+
+
+.contenedor_principal_historiales{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "titulo_unico"
+                        "contenido_unico";
+}
+
+.titulo4{
+    grid-area: titulo_unico;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor_historial{
+    background-color: rgb(251, 251, 251);
+    grid-area: contenido_unico;
+
+    /* Contenido interior */
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+}
+
+/* CONTENIDO DATOS CLIENTE */
+
+.contenedor_principal_hotorial{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.historial{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+#tablas-historal{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+/* ________________________________________ QUEJAS Y SUGERENCIAS ________________________________________ */
+
+.contenedor_principal_quejas_y_sugerencias{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                        "titulo_unico"
+                        "contenido_unico";
+}
+
+.titulo5{
+    grid-area: titulo_unico;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor_PQR{
+    background-color: rgb(251, 251, 251);
+    grid-area: contenido_unico;
+
+    /* Contenido interior */
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+}
+
+/* CONTENIDO DATOS CLIENTE */
+
+.contenedor_principal_PQR{
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.PQR{
+    margin: 2px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+#tablas-PQR{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
