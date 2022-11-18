@@ -12,10 +12,11 @@
 
         --cornflower-blue: #816bfc;
         --white: #ffffff;
+        --fondo:rgba(244, 237, 237, 0.953);
         --blue: #2706fc;
         --brink-pink: #d91b3ee8;
         --tulip-tree: #000000;
-        --slate-gray: #717d91;
+        --slate-gray: #dddfe293;
         --botticelli: #c8d0e2;
         --manhattan: #f2c19f;
         --jordy-blue: #9abef8;
@@ -107,7 +108,7 @@
 .content {
     margin-left: 300px;
     min-height: 100vh;
-    background: var(--white);
+    background: var(--fondo);
     transition: 0.5s;
 }
 
@@ -328,6 +329,30 @@
                         "contenido_one contenido_two";
 }
 
+@media (max-width: 680px) {
+    .contenedor_principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                            "titulo_one "
+                            "contenido_one"
+                            "titulo_two"
+                            "contenido_two";
+    }
+    .titulo1{
+        color: black;
+        font-weight: 600;
+        grid-area: titulo_one;
+        text-align: center;
+    }
+    .titulo2{
+        color: black;
+        font-weight: 600;
+        grid-area: titulo_two;
+        text-align: center;
+    }
+}
+
 /* Llamado de titulos */
 
 .titulo1{
@@ -360,7 +385,6 @@
     gap: 6px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
 }
 
 /* estilos contenedores hijos */
@@ -371,6 +395,7 @@
     border: solid 2px;
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 .conductores_disponibles{
@@ -387,6 +412,7 @@
     border: solid 2px;
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 .conductores_servicio{
@@ -418,13 +444,12 @@
 }
 
 .titulo1{
+    font-weight: 600;
     grid-area: titulo_unico;
     text-align: center;
-    background-color: rgb(255, 255, 255);
 }
 
 .contenedor_solicitudes{
-    background-color: rgb(251, 251, 251);
     grid-area: contenido_unico;
 
     /* Contenido interior */
@@ -440,17 +465,19 @@
     padding: 2px;
     border: solid 2px;
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgba(86, 86, 86, 0.737);
 }
 
 .solicitud_conductores{
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
+    background-color: white;
 }
 
 #tablas-soli{
+    color: black;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -489,13 +516,12 @@
 }
 
 .titulo2{
+    font-weight: 600;
     grid-area: titulo_unico;
     text-align: center;
-    background-color: rgb(255, 255, 255);
 }
 
 .contenedor_datos_conductor{
-    background-color: rgb(251, 251, 251);
     grid-area: contenido_unico;
 
     /* Contenido interior */
@@ -514,15 +540,17 @@
 
 .datos_conductores{
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
+    background-color: white;
 }
 
 #tablas-datos_conductor{
     justify-content: center;
     text-align: center;
     display: flex;
+    color: black;
 }
 
 /* ______________________________________ DATOS CLIENTES _______________________________________ */
@@ -539,11 +567,11 @@
 .titulo3{
     grid-area: titulo_unico;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: black;
 }
 
 .contenedor_datos_cliente{
-    background-color: rgb(251, 251, 251);
     grid-area: contenido_unico;
 
     /* Contenido interior */
@@ -564,15 +592,18 @@
 
 .datos_cliente{
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
+    background-color: white;
 }
 
 #tablas-datos_cliente{
     justify-content: center;
     text-align: center;
     display: flex;
+    color: black;
+    padding-bottom: 5px;
 }
 
 /* ________________________________________ HISTORIAL DE VIAJES _______________________________________________________ */
@@ -589,11 +620,11 @@
 .titulo4{
     grid-area: titulo_unico;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: black;
 }
 
 .contenedor_historial{
-    background-color: rgb(251, 251, 251);
     grid-area: contenido_unico;
 
     /* Contenido interior */
@@ -614,15 +645,17 @@
 
 .historial{
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
+    background-color: white;
 }
 
 #tablas-historal{
     justify-content: center;
     text-align: center;
     display: flex;
+    color: black;
 }
 
 /* ________________________________________ QUEJAS Y SUGERENCIAS ________________________________________ */
@@ -638,11 +671,11 @@
 .titulo5{
     grid-area: titulo_unico;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: black;
 }
 
 .contenedor_PQR{
-    background-color: rgb(251, 251, 251);
     grid-area: contenido_unico;
 
     /* Contenido interior */
@@ -663,13 +696,15 @@
 
 .PQR{
     margin: 2px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: black;
     border-radius: 25px;
+    background-color: white;
 }
 
 #tablas-PQR{
     justify-content: center;
     text-align: center;
     display: flex;
+    color: black;
 }
