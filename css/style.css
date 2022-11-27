@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EB1616;
+    --primary: #cc1839;
     --secondary: #191C24;
     --light: #6C7293;
     --dark: #000000;
@@ -12,7 +12,7 @@
 
         --cornflower-blue: #816bfc;
         --white: #ffffff;
-        --fondo:rgba(244, 237, 237, 0.953);
+        --fondo:rgba(242, 242, 242, 0.953);
         --blue: #2706fc;
         --brink-pink: #d91b3ee8;
         --tulip-tree: #000000;
@@ -393,8 +393,8 @@
     margin: 5px;
     padding: 2px;
     border: solid 2px;
+    border-color: rgba(86, 86, 86, 0.737);
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
     background-color: white;
 }
 
@@ -402,7 +402,7 @@
     color: black;
     margin: 2px;
     border: solid 2px;
-    border-color: black;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
 }
 
@@ -410,8 +410,8 @@
     margin: 5px;
     padding: 2px;
     border: solid 2px;
+    border-color: rgba(86, 86, 86, 0.737);
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
     background-color: white;
 }
 
@@ -419,7 +419,7 @@
     color: black;
     margin: 2px;
     border: solid 2px;
-    border-color: black;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
 }
 
@@ -470,8 +470,8 @@
 
 .solicitud_conductores{
     margin: 2px;
-    border: solid 2px;
-    border-color: black;
+    border: solid 1px;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
     background-color: white;
 }
@@ -535,13 +535,13 @@
     padding: 2px;
     border: solid 2px;
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgba(86, 86, 86, 0.737);
 }
 
 .datos_conductores{
     margin: 2px;
-    border: solid 2px;
-    border-color: black;
+    border: solid 1px;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
     background-color: white;
 }
@@ -587,13 +587,13 @@
     padding: 2px;
     border: solid 2px;
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgba(86, 86, 86, 0.737);
 }
 
 .datos_cliente{
     margin: 2px;
-    border: solid 2px;
-    border-color: black;
+    border: solid 1px;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
     background-color: white;
 }
@@ -640,13 +640,13 @@
     padding: 2px;
     border: solid 2px;
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgba(86, 86, 86, 0.737);
 }
 
 .historial{
     margin: 2px;
-    border: solid 2px;
-    border-color: black;
+    border: solid 1px;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
     background-color: white;
 }
@@ -691,13 +691,13 @@
     padding: 2px;
     border: solid 2px;
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgba(86, 86, 86, 0.737);
 }
 
 .PQR{
     margin: 2px;
-    border: solid 2px;
-    border-color: black;
+    border: solid 1px;
+    border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
     background-color: white;
 }
@@ -707,4 +707,25 @@
     text-align: center;
     display: flex;
     color: black;
+}
+
+/* INICIO SESIÓN ADMINISTRADOR */
+
+#fondo_inicio_sesion_administrador{
+    background: var(--fondo);
+    color: #000000;
+}
+
+#contenedor_inicio {
+    background: #ffffffdc;
+    -webkit-box-shadow: 0px 14px 15px 5px rgba(144,141,137,0.91); 
+    box-shadow: 0px 14px 15px 5px rgba(144,141,137,0.91);
+}
+
+#floatingInput{
+    background: var(--fondo);
+}
+
+#floatingPassword{
+    background: var(--fondo);
 }
