@@ -86,98 +86,32 @@
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control bg-white border-1" type="search" placeholder="Buscar">
-                </form>
+               
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Mensajes</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">Ver todos los mensajes</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificaciones</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Perfil actualizado</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Nuevo usuario agregado</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Contraseña cambiada</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">Ver todas las notificaciones</a>
-                        </div>
-                    </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">Carlos Noguera</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">Mi perfil</a>
                             <a href="./signin.html" class="dropdown-item">Cerrar sesion</a>
                         </div>
                     </div>
                 </div>
-            </nav> 
+            </nav><br>
             <!-- Navbar End -->
 
             <div class="container">
                 <main>
                   <div class="col-md-7 col-lg-8 text-secondary mx-auto">
                     <h4 class="mb-3 text-secondary">Datos Generales</h4>
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" action="" novalidate>
                       <div class="row g-3">
                         <div class="col-sm-6">
                           <label for="firstName" class="form-label">Nombre:</label>
                           <input type="text" class="form-control bg-white" id="firstName" placeholder="" value="" required>
                           <div class="invalid-feedback">
-                            Valid first name is required.
+                            Se requiere este campo lleno
                           </div>
                         </div>
             
@@ -185,7 +119,7 @@
                           <label for="lastName" class="form-label">Apellido:</label>
                           <input type="text" class="form-control  bg-white" id="lastName" placeholder="" value="" required>
                           <div class="invalid-feedback">
-                            Valid last name is required.
+                            Se requiere este campo lleno
                           </div>
                         </div>
             
@@ -193,49 +127,49 @@
                           <label for="username" class="form-label">Direccion correo electronico</label>
                           <div class="input-group has-validation">
                             <span class="input-group-text">@</span>
-                            <input type="text" class="form-control  bg-white" id="username" placeholder="Username" required>
+                            <input type="text" class="form-control  bg-white" id="username" required>
                             <div class="invalid-feedback">
-                              Your username is required.
+                              Se requiere este campo lleno
                             </div>
                           </div>
                         </div>
             
                         <div class="col-12">
-                          <label for="email" class="form-label">correo electronico <span
-                              class="text-muted">(Optional)</span></label>
-                          <input type="email" class="form-control  bg-white" id="email" placeholder="you@example.com">
+                          <label for="email" class="form-label">Numero Telefono<span
+                              class="text-muted"></span></label>
+                          <input type="number" class="form-control  bg-white" id="email" required>
                           <div class="invalid-feedback">
-                            Please enter a valid email address for shipping updates.
+                            Se requiere este campo lleno
                           </div>
                         </div>
             
                         <div class="col-12">
                           <label for="address" class="form-label">Direccion:</label>
-                          <input type="text" class="form-control  bg-white" id="address" placeholder="1234 Main St" required>
+                          <input type="text" class="form-control  bg-white" id="address" required>
                           <div class="invalid-feedback">
-                            Please enter your shipping address.
+                            Se requiere este campo lleno
                           </div>
                         </div>
             
                         <div class="col-md-5">
                           <label for="country" class="form-label">Pais</label>
                           <select class="form-select  bg-white" id="country" required>
-                            <option value="">Choose...</option>
-                            <option>United States</option>
+                            <option value="">Selecionar...</option>
+                            <option>Colombia</option>
                           </select>
                           <div class="invalid-feedback">
-                            Please select a valid country.
+                            Se requiere este campo lleno
                           </div>
                         </div>
             
                         <div class="col-md-4">
                           <label for="state" class="form-label">Departamento</label>
                           <select class="form-select  bg-white" id="state" required>
-                            <option value="">Choose...</option>
-                            <option>California</option>
+                            <option value="">Selecionar...</option>
+                            <option>Cauca</option>
                           </select>
                           <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Se requiere este campo lleno
                           </div>
                         </div>
             
@@ -243,7 +177,7 @@
                           <label for="zip" class="form-label">Ciudad</label>
                           <input type="text" class="form-control  bg-white  " id="zip" placeholder="" required>
                           <div class="invalid-feedback">
-                            Zip code required.
+                            Se requiere este campo lleno
                           </div>
                         </div>
                       </div>
@@ -266,7 +200,7 @@
         
         
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+     
     </div>
 
     <!-- JavaScript Libraries -->
