@@ -1,20 +1,21 @@
 /********** Template CSS **********/
 :root {
-    --primary: #cc1839;
-    --secondary: #191C24;
+    --primary: #232837;
+    --secondary: #232837;
     --light: #6C7293;
     --dark: #000000;
     --white: rgb(255, 255, 255);
-    --navcolor: #cc1839;
+    --navcolor: #161627;
 
 
 
 
+        --navegador-item: #fff;
         --cornflower-blue: #816bfc;
         --white: #ffffff;
         --fondo:rgba(242, 242, 242, 0.953);
         --blue: #2706fc;
-        --brink-pink: #d91b3ee8;
+        --brink-pink: #bec6dff8;
         --tulip-tree: #000000;
         --slate-gray: #dddfe293;
         --botticelli: #c8d0e2;
@@ -34,6 +35,9 @@
     z-index: 99;
 }
 
+#tramos_sas{
+    
+}
 
 /*** Spinner ***/
 #spinner {
@@ -210,12 +214,16 @@
 .content .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 12px 0;
-    color: var(--dark);
+    color: var(--navegador-item);
     outline: none;
 }
 
 .content .navbar .navbar-nav .nav-link:hover,
 .content .navbar .navbar-nav .nav-link.active {
+    color: var(--navegador-item);
+}
+
+#icono_noti{
     color: var(--tulip-tree);
 }
 
