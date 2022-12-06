@@ -6,16 +6,12 @@ body{
 /* MAS DATOS SOLICITUD CONDUCTORES */
 
 .contrainer_MDS {
-
     margin: 20px;
     border: solid;
     border-radius: 15px;
-  
+    text-align: start;
 }
 
-#tbl-MDS{
-    text-align: center;
-}
 
 /* MAS DATOS CONDUCTORES */
 
