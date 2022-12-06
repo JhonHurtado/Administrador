@@ -35,10 +35,6 @@
     z-index: 99;
 }
 
-#tramos_sas{
-    
-}
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -408,7 +404,6 @@
 
 .conductores_disponibles{
     color: black;
-    margin: 2px;
     border: solid 2px;
     border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
@@ -425,7 +420,6 @@
 
 .conductores_servicio{
     color: black;
-    margin: 2px;
     border: solid 2px;
     border-color: rgba(82, 76, 76, 0.466);
     border-radius: 25px;
