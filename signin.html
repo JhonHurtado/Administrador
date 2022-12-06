@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,57 +35,62 @@
 <body>
     <div class="container-fluid position-relative d-flex p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Cargando...</span>
             </div>
         </div>
     </div>
-        <!-- Spinner End -->
+    <!-- Spinner End -->
 
 
-        <!-- Iniciar Sesión Start -->
-        <div class="container-fluid">
-            <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;" id="fondo_inicio_sesion_administrador">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
-                    <div class="rounded p-4 p-sm-5 my-4 mx-3 border" id="contenedor_inicio">
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="index.html" id="tramos_sas">
-                                <h2 class="text-warning">TRAMO</h2>
-                                <h2 class="text-dark">&nbspS.A.S</h2>
-                            </a>
-                        </div>
-                        <form class="row g-3 needs-validation" novalidate autocomplete="off">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                                <label for="floatingInput">Correo Electronico</label>
-                                <div class="valid-feedback">
-                                    Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Porfavor ingresa el correo Electronico.
-                                </div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
-                                <label for="floatingPassword">Contraseña</label>
-                                <div class="valid-feedback">
-                                    Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Porfavor ingresa la contraseña.
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn bg-navcolor text-white py-3 w-100 mb-3">Iniciar Sesión</button>
-                                <p class="text-center mb-0">Administrador TRAMO</p>
-                            </div>
-                          </form>
+    <!-- Iniciar Sesión Start -->
+    <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;"
+            id="fondo_inicio_sesion_administrador">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="rounded p-4 p-sm-5 my-4 mx-3 border" id="contenedor_inicio">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <a class="navbar-brand d-flex justify-content-center fw-bold fs-3" href="index.html"
+                            id="tramos_sas">
+                            <img src="./img/Logofin.png" class="w-75" alt=""> 
+                        </a>
                     </div>
+                    <form class="row g-3 needs-validation" novalidate autocomplete="off">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                                required>
+                            <label for="floatingInput">Correo Electronico</label>
+                            <div class="valid-feedback">
+                                Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Porfavor ingresa el correo Electronico.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña"
+                                required>
+                            <label for="floatingPassword">Contraseña</label>
+                            <div class="valid-feedback">
+                                Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Porfavor ingresa la contraseña.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn bg-navcolor text-white py-3 w-100 mb-3">Iniciar
+                                Sesión</button>
+                            <p class="text-center mb-0">Administrador TRAMO</p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Iniciar Sesión End -->
+    </div>
+    <!-- Iniciar Sesión End -->
     </div>
 
     <!-- JavaScript Libraries -->
