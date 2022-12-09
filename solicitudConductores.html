@@ -47,7 +47,7 @@
 
 
     <!-- Sidebar Start -->
-    <div class="sidebar pe-4 borders pb-3">
+    <div class="sidebar pe-4 borders pb-3" id="sidebar">
         <nav class="navbar bg-white navbar-dark">
             <a class="navbar-brand d-flex align-items-center fw-bold fs-3 pb-3 ps-3" href="index.html" id="tramos_sas">
                 <img src="./img/Logofin.png" class="w-75" alt="">
@@ -71,8 +71,316 @@
                         class="bi bi-box-arrow-left me-2"></i>Cerrar sesión</a>
             </div>
         </nav>
+         <!-- Modal -->
+         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" id="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close"></button>
+              </div>
+              <div class="modal-body text-dark">
+                  <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 bg-navcolor text-white text-center mb-1">DATOS CONDUCTOR</div>
+                        <div class="col-12 col-xl-6">
+                          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                  <img src="./img/Camion.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                  <img src="./img/Camion.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="./img/Camion.jpg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                          <table class="w-100 text-center">
+                              <tr>
+                                <th colspan="2" class="bg-navcolor text-white">Datos Tenedor</th>
+                              </tr>
+                              <tr>
+                                <td>Nombre:</td>
+                                <td>Yonatan David</td>
+                              </tr>
+                              <tr>
+                                <td>Apellido:</td>
+                                <td>Pechene Suarez</td>
+                              </tr>
+                              <tr>
+                                <td>Numero Documento:</td>
+                                <td>1061530108</td>
+                              </tr>
+                              <tr>
+                                <td>Direccion residencia:</td>
+                                <td>Piendamo - cauca</td>
+                              </tr>
+                              <tr>
+                                <td>Ciudad:</td>
+                                <td>popayan</td>
+                              </tr>
+                              <tr>
+                                <td>Telefono:</td>
+                                <td>3124567890</td>
+                              </tr>
+                            </table>
+                            <table class="w-100 text-center">
+                              <tr>
+                                <th colspan="2" class="bg-navcolor text-white">Contaco Emergencia</th>
+                              </tr>
+                              <tr>
+                                <td>Nombre:</td>
+                                <td>Yonatan David</td>
+                              </tr>
+                              <tr>
+                                <td>Apellido:</td>
+                                <td>Pechene Suarez</td>
+                              </tr>
+                              <tr>
+                                <td>Numero Documento:</td>
+                                <td>1061530108</td>
+                              </tr>
+                              <tr>
+                                <td>Correo Electronico:</td>
+                                <td>Yonatansuarez78@mail.com</td>
+                              </tr>
+                            </table>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-xl-6">
+                          <table class="w-100 text-center">
+                              <tr>
+                                <th colspan="2" class="bg-navcolor text-white">Vehiculo</th>
+                              </tr>
+                  
+                              <tr>
+                                <td>Placa Vehiculo</th>
+                                <td>nkd - 200</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Marca</td>
+                                <td>Toyota Gr Supra</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>modelo</td>
+                                <td>2019</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Ejes</td>
+                                <td>5</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Tipo Vehiculo</td>
+                                <td>Camioneta</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Fecha Nacimiento</td>
+                                <td>10 / 08 / 2005</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Traccion Vehiculo</td>
+                                <td> 6 x 4 - t</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Placas Trailer</td>
+                                <td> ztx 006 </td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Peso Vacio</td>
+                                <td>2 Toneladas</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Tipo Combustible</td>
+                                <td>Disel</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Licencia</td>
+                                <td>1005632887</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Soat</td>
+                                <td>1876543876</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Fecha Venimiento Soat</td>
+                                <td> 10 / 04 / 2023</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Poliza Responsable</td>
+                                <td>Pechene-Suarez@ 001</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Revision Tecnomecanica</td>
+                                <td>765- 666- 001</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Fecha vencimiento Tecnomecanica</td>
+                                <td>765- 666- 001</td>
+                              </tr>
+                              
+                            </table>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                          <table class="w-100 text-center">
+                              <tr>
+                                <th colspan="2" class="bg-navcolor text-white">Conductores</th>
+                              </tr>
+                  
+                              <tr>
+                                <td>Nombre</td>
+                                <td>Yonatan David</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Apellido</td>
+                                <td>Pechene Suarez</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Tipo Documento</td>
+                                <td>Cedula Ciudadania</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Documento</td>
+                                <td>1061530108</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Nacionalidad</td>
+                                <td>Colombia</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Fecha Nacimiento</td>
+                                <td>10 / 08 / 2005</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Correo Electronico</td>
+                                <td>YonatanSuarez78@gmail.com</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Correo Electronico Recuperacion</td>
+                                <td>Yonatan@gmail.com</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Usuario</td>
+                                <td>Yonatan78</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Telefono</td>
+                                <td>3125437685</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Numero Licencia</td>
+                                <td>1005632887</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Contraseña</td>
+                                <td>PecheneSuarez</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Pregunta Seguridad</td>
+                                <td>PecheneSuarez@</td>
+                              </tr>
+                  
+                              <tr>
+                                <td>Respuesta Seguridad</td>
+                                <td>Pechene-Suarez@ 001</td>
+                              </tr>
+                  
+                            </table>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <table class="w-100 text-center">
+                              <tr>
+                                <th colspan="2" class="bg-navcolor text-white">Datos Propietario</th>
+                              </tr>
+                              <tr>
+                                <td>Nombre:</td>
+                                <td>Yonatan David</td>
+                              </tr>
+                              <tr>
+                                <td>Apellido:</td>
+                                <td>Pechene Suarez</td>
+                              </tr>
+                              <tr>
+                                <td>Numero Documento:</td>
+                                <td>1061530108</td>
+                              </tr>
+                              <tr>
+                                <td>Direcion residencia:</td>
+                                <td> cra.9 #66N - 00 Colombia</td>
+                              </tr>
+                              <tr>
+                                <td>Ciudad:</td>
+                                <td>Popayan</td>
+                              </tr>
+                              <tr>
+                                <td>Numero Telefono:</td>
+                                <td>+57 3123456789</td>
+                              </tr>
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center">
+                          <button type="button" class="btn btn-primary btn-sm">Aceptar</button>
+                          <button type="button" class="btn btn-secondary btn-sm">Rechazar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+            <!-- fin modal -->
     </div>
     <!-- Sidebar End -->
+
+    
 
     <!-- Content Start -->
     <div class="content">
@@ -105,7 +413,7 @@
                             <small>15 minutes ago</small>
                         </a>
                         <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item text-center">Ver todas las notificaciones</a>
+                        <a href="#" id="modal" class="dropdown-item text-center">Ver todas las notificaciones</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -160,8 +468,8 @@
                             <td rowspan="2">
                                 <table style="margin-left: 20%;">
                                     <tr>
-                                        <td style="padding-right: 15px;"><button id="btn_aceptar">Aceptar</button></td>
-                                        <td style="padding-left: 15px;"><button id="btn_rechazar">Rechazar</button></td>
+                                        <td style="padding-right: 7px;"><button type="button" class="btn btn-primary btn-sm">Aceptar</button></td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm">Rechazar</button></td>
                                     </tr>
                                 </table>
                             </td>
@@ -171,271 +479,212 @@
                             <td><b>Dirección</b></td>
                         </tr>
                         <tr>
-                            <td><a href="./HTML2/mas_datos_soli_conductor.html" target="_blank"
-                                    class="mas_datos">Mostrar mas datos</a></td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas Datos</a></td>
                             <td>Carrera 78N-Popayan Cauca</td>
                         </tr>
                     </table>
                 </div>
                 <div class="solicitud_conductores">
-                    <table id="tablas-soli">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><b>Conductor</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><img src="./icons/usuario.svg"></td>
-                                        <td>Carlos Fernandez</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3227699910</td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td><b>Datos del conductor</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
-                            <td><b>Cedula</b></td>
-                        </tr>
-                        <tr>
-                            <td>1111111</td>
-                        </tr>
-                        <tr>
-                            <td><b>Correo Electronico</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">
-                                <table style="margin-left: 20%;">
-                                    <tr>
-                                        <td style="padding-right: 15px;"><button id="btn_aceptar">Aceptar</button></td>
-                                        <td style="padding-left: 15px;"><button id="btn_rechazar">Rechazar</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>krlosnoguera21@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><b>Dirección</b></td>
-                        </tr>
-                        <tr>
-                            <td><a href="./HTML2/mas_datos_soli_conductor.html" target="_blank"
-                                    class="mas_datos">Mostrar mas datos</a></td>
-                            <td>Carrera 78N-Popayan Cauca</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="solicitud_conductores">
-                    <table id="tablas-soli">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><b>Conductor</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><img src="./icons/usuario.svg"></td>
-                                        <td>Carlos Fernandez</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3227699910</td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td><b>Datos del conductor</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
-                            <td><b>Cedula</b></td>
-                        </tr>
-                        <tr>
-                            <td>1111111</td>
-                        </tr>
-                        <tr>
-                            <td><b>Correo Electronico</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">
-                                <table style="margin-left: 20%;">
-                                    <tr>
-                                        <td style="padding-right: 15px;"><button id="btn_aceptar">Aceptar</button></td>
-                                        <td style="padding-left: 15px;"><button id="btn_rechazar">Rechazar</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>krlosnoguera21@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><b>Dirección</b></td>
-                        </tr>
-                        <tr>
-                            <td><a href="./HTML2/mas_datos_soli_conductor.html" target="_blank"
-                                    class="mas_datos">Mostrar mas datos</a></td>
-                            <td>Carrera 78N-Popayan Cauca</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="solicitud_conductores">
-                    <table id="tablas-soli">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><b>Conductor</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><img src="./icons/usuario.svg"></td>
-                                        <td>Carlos Fernandez</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3227699910</td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td><b>Datos del conductor</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
-                            <td><b>Cedula</b></td>
-                        </tr>
-                        <tr>
-                            <td>1111111</td>
-                        </tr>
-                        <tr>
-                            <td><b>Correo Electronico</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">
-                                <table style="margin-left: 20%;">
-                                    <tr>
-                                        <td style="padding-right: 15px;"><button id="btn_aceptar">Aceptar</button></td>
-                                        <td style="padding-left: 15px;"><button id="btn_rechazar">Rechazar</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>krlosnoguera21@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><b>Dirección</b></td>
-                        </tr>
-                        <tr>
-                            <td><a href="./HTML2/mas_datos_soli_conductor.html" target="_blank"
-                                    class="mas_datos">Mostrar mas datos</a></td>
-                            <td>Carrera 78N-Popayan Cauca</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="solicitud_conductores">
-                    <table id="tablas-soli">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><b>Conductor</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><img src="./icons/usuario.svg"></td>
-                                        <td>Carlos Fernandez</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3227699910</td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td><b>Datos del conductor</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
-                            <td><b>Cedula</b></td>
-                        </tr>
-                        <tr>
-                            <td>1111111</td>
-                        </tr>
-                        <tr>
-                            <td><b>Correo Electronico</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">
-                                <table style="margin-left: 20%;">
-                                    <tr>
-                                        <td style="padding-right: 15px;"><button id="btn_aceptar">Aceptar</button></td>
-                                        <td style="padding-left: 15px;"><button id="btn_rechazar">Rechazar</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>krlosnoguera21@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><b>Dirección</b></td>
-                        </tr>
-                        <tr>
-                            <td><a href="./HTML2/mas_datos_soli_conductor.html" target="_blank"
-                                    class="mas_datos">Mostrar mas datos</a></td>
-                            <td>Carrera 78N-Popayan Cauca</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="solicitud_conductores">
-                    <table id="tablas-soli">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><b>Conductor</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><img src="./icons/usuario.svg"></td>
-                                        <td>Carlos Fernandez</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3227699910</td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td><b>Datos del conductor</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
-                            <td><b>Cedula</b></td>
-                        </tr>
-                        <tr>
-                            <td>1111111</td>
-                        </tr>
-                        <tr>
-                            <td><b>Correo Electronico</b></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">
-                                <table style="margin-left: 20%;">
-                                    <tr>
-                                        <td style="padding-right: 15px;"><button id="btn_aceptar">Aceptar</button></td>
-                                        <td style="padding-left: 15px;"><button id="btn_rechazar">Rechazar</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>krlosnoguera21@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><b>Dirección</b></td>
-                        </tr>
-                        <tr>
-                            <td><a href="./HTML2/mas_datos_soli_conductor.html" target="_blank"
-                                    class="mas_datos">Mostrar mas datos</a></td>
-                            <td>Carrera 78N-Popayan Cauca</td>
-                        </tr>
-                    </table>
-                </div>
+                  <table id="tablas-soli">
+                      <tr>
+                          <td>
+                              <table>
+                                  <tr>
+                                      <td><b>Conductor</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td rowspan="2"><img src="./icons/usuario.svg"></td>
+                                      <td>Carlos Fernandez</td>
+                                  </tr>
+                                  <tr>
+                                      <td>3227699910</td>
+                                  </tr>
+                              </table>
+                          </td>
+                          <td><b>Datos del conductor</b></td>
+                      </tr>
+                      <tr>
+                          <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
+                          <td><b>Cedula</b></td>
+                      </tr>
+                      <tr>
+                          <td>1111111</td>
+                      </tr>
+                      <tr>
+                          <td><b>Correo Electronico</b></td>
+                      </tr>
+                      <tr>
+                          <td rowspan="2">
+                              <table style="margin-left: 20%;">
+                                  <tr>
+                                      <td style="padding-right: 7px;"><button type="button" class="btn btn-primary btn-sm">Aceptar</button></td>
+                                      <td><button type="button" class="btn btn-secondary btn-sm">Rechazar</button></td>
+                                  </tr>
+                              </table>
+                          </td>
+                          <td>krlosnoguera21@gmail.com</td>
+                      </tr>
+                      <tr>
+                          <td><b>Dirección</b></td>
+                      </tr>
+                      <tr>
+                          <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas Datos</a></td>
+                          <td>Carrera 78N-Popayan Cauca</td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="solicitud_conductores">
+                <table id="tablas-soli">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td><b>Conductor</b></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2"><img src="./icons/usuario.svg"></td>
+                                    <td>Carlos Fernandez</td>
+                                </tr>
+                                <tr>
+                                    <td>3227699910</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td><b>Datos del conductor</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
+                        <td><b>Cedula</b></td>
+                    </tr>
+                    <tr>
+                        <td>1111111</td>
+                    </tr>
+                    <tr>
+                        <td><b>Correo Electronico</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <table style="margin-left: 20%;">
+                                <tr>
+                                    <td style="padding-right: 7px;"><button type="button" class="btn btn-primary btn-sm">Aceptar</button></td>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">Rechazar</button></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>krlosnoguera21@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>Dirección</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas Datos</a></td>
+                        <td>Carrera 78N-Popayan Cauca</td>
+                    </tr>
+                </table>
             </div>
+            <div class="solicitud_conductores">
+              <table id="tablas-soli">
+                  <tr>
+                      <td>
+                          <table>
+                              <tr>
+                                  <td><b>Conductor</b></td>
+                              </tr>
+                              <tr>
+                                  <td rowspan="2"><img src="./icons/usuario.svg"></td>
+                                  <td>Carlos Fernandez</td>
+                              </tr>
+                              <tr>
+                                  <td>3227699910</td>
+                              </tr>
+                          </table>
+                      </td>
+                      <td><b>Datos del conductor</b></td>
+                  </tr>
+                  <tr>
+                      <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
+                      <td><b>Cedula</b></td>
+                  </tr>
+                  <tr>
+                      <td>1111111</td>
+                  </tr>
+                  <tr>
+                      <td><b>Correo Electronico</b></td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2">
+                          <table style="margin-left: 20%;">
+                              <tr>
+                                  <td style="padding-right: 7px;"><button type="button" class="btn btn-primary btn-sm">Aceptar</button></td>
+                                  <td><button type="button" class="btn btn-secondary btn-sm">Rechazar</button></td>
+                              </tr>
+                          </table>
+                      </td>
+                      <td>krlosnoguera21@gmail.com</td>
+                  </tr>
+                  <tr>
+                      <td><b>Dirección</b></td>
+                  </tr>
+                  <tr>
+                      <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas Datos</a></td>
+                      <td>Carrera 78N-Popayan Cauca</td>
+                  </tr>
+              </table>
+          </div>
+          <div class="solicitud_conductores">
+            <table id="tablas-soli">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><b>Conductor</b></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2"><img src="./icons/usuario.svg"></td>
+                                <td>Carlos Fernandez</td>
+                            </tr>
+                            <tr>
+                                <td>3227699910</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td><b>Datos del conductor</b></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"><img src="./img/Camion.jpg" width="250px"></td>
+                    <td><b>Cedula</b></td>
+                </tr>
+                <tr>
+                    <td>1111111</td>
+                </tr>
+                <tr>
+                    <td><b>Correo Electronico</b></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <table style="margin-left: 20%;">
+                            <tr>
+                                <td style="padding-right: 7px;"><button type="button" class="btn btn-primary btn-sm">Aceptar</button></td>
+                                <td><button type="button" class="btn btn-secondary btn-sm">Rechazar</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>krlosnoguera21@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><b>Dirección</b></td>
+                </tr>
+                <tr>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas Datos</a></td>
+                    <td>Carrera 78N-Popayan Cauca</td>
+                </tr>
+            </table>
+        </div>
+          </div>
             <!-- fin carlos -->
-
-
-
+        </div>
         </div>
         <!-- Content End -->
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-warning btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
