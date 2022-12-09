@@ -24,6 +24,10 @@
 
 }
 
+a{
+    color: rgb(255, 29, 29);
+}
+
 .bg-navcolor{
     background-color: var(--navcolor);
 }
@@ -485,28 +489,6 @@
     display: flex;
 }
 
-#btn_aceptar{
-    cursor: pointer;
-    border: solid 2px;
-    border-radius: 15px;
-    color: rgb(0, 4, 255);
-}
-
-#btn_rechazar{
-    cursor: pointer;
-    border: solid 2px;
-    border-radius: 15px;
-    color: rgb(255, 0, 0);
-}
-
-.mas_datos{
-    color: rgb(0, 123, 255);
-}
-
-.ver_manifiesto{
-    color: blue;
-}
-
 /* _________________________________________ CSS DE HTML DATOS CONDUCTORES _________________________________________________ */
 
 .contenedor_principal_datos_conductores{
@@ -683,7 +665,7 @@
     /* Contenido interior */
     gap: 6px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 /* CONTENIDO DATOS CLIENTE */

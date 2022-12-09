@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
 
@@ -50,7 +51,6 @@
         $('.sidebar, .content').toggleClass("open");
         return false;
     });
-
 
     // Progress Bar
     $('.pg-bar').waypoint(function () {
